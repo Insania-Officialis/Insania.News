@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Insania.Shared.Messages" Version="1.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Insania.News.Contracts\Insania.News.Contracts.csproj" />
+    <ProjectReference Include="..\Insania.News.Database\Insania.News.Database.csproj" />
+    <ProjectReference Include="..\Insania.News.Entities\Insania.News.Entities.csproj" />
+    <ProjectReference Include="..\Insania.News.Messages\Insania.News.Messages.csproj" />
+    <ProjectReference Include="..\Insania.News.Models\Insania.News.Models.csproj" />
+  </ItemGroup>
+
+</Project>

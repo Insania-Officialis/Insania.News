@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a76e834e-948a-4f32-8d5c-826956f3befd</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Insania.Shared.Contracts" Version="1.0.3" />
+    <PackageReference Include="Insania.Shared.Middleware" Version="1.0.0" />
+    <PackageReference Include="Insania.Shared.Services" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.6" />
+    <PackageReference Include="Microsoft.OpenApi" Version="1.6.24" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1-Preview.1" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="9.0.2" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="3.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Insania.News.BusinessLogic\Insania.News.BusinessLogic.csproj" />
+    <ProjectReference Include="..\Insania.News.Contracts\Insania.News.Contracts.csproj" />
+    <ProjectReference Include="..\Insania.News.Database\Insania.News.Database.csproj" />
+    <ProjectReference Include="..\Insania.News.Messages\Insania.News.Messages.csproj" />
+    <ProjectReference Include="..\Insania.News.Middleware\Insania.News.Middleware.csproj" />
+    <ProjectReference Include="..\Insania.News.Models\Insania.News.Models.csproj" />
+  </ItemGroup>
+
+</Project>
