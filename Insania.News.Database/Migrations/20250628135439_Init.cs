@@ -16,7 +16,7 @@ namespace Insania.News.Database.Migrations
                 name: "insania_news");
 
             migrationBuilder.CreateTable(
-                name: "d_news_types",
+                name: "с_news_types",
                 schema: "insania_news",
                 columns: table => new
                 {
@@ -32,8 +32,8 @@ namespace Insania.News.Database.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_d_news_types", x => x.id);
-                    table.UniqueConstraint("AK_d_news_types_alias", x => x.alias);
+                    table.PrimaryKey("PK_с_news_types", x => x.id);
+                    table.UniqueConstraint("AK_с_news_types_alias", x => x.alias);
                 });
 
             migrationBuilder.CreateTable(
@@ -57,10 +57,10 @@ namespace Insania.News.Database.Migrations
                 {
                     table.PrimaryKey("PK_r_news", x => x.id);
                     table.ForeignKey(
-                        name: "FK_r_news_d_news_types_type_id",
+                        name: "FK_r_news_с_news_types_type_id",
                         column: x => x.type_id,
                         principalSchema: "insania_news",
-                        principalTable: "d_news_types",
+                        principalTable: "с_news_types",
                         principalColumn: "id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -119,7 +119,7 @@ namespace Insania.News.Database.Migrations
                 schema: "insania_news");
 
             migrationBuilder.DropTable(
-                name: "d_news_types",
+                name: "с_news_types",
                 schema: "insania_news");
         }
     }

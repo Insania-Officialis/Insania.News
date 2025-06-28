@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Insania.News.Database.Migrations
 {
     [DbContext(typeof(NewsContext))]
-    [Migration("20250616115701_Init")]
+    [Migration("20250628135439_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -211,7 +211,7 @@ namespace Insania.News.Database.Migrations
 
                     b.HasAlternateKey("Alias");
 
-                    b.ToTable("d_news_types", "insania_news");
+                    b.ToTable("с_news_types", "insania_news");
                 });
 
             modelBuilder.Entity("Insania.News.Entities.News", b =>

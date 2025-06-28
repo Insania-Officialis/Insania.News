@@ -8,7 +8,7 @@ namespace Insania.News.Entities;
 /// <summary>
 /// Модель сущности типа новости
 /// </summary>
-[Table("d_news_types")]
+[Table("с_news_types")]
 public class NewsType : Compendium
 {
     #region Конструкторы

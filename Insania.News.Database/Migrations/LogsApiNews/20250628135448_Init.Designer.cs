@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Insania.News.Database.Migrations.LogsApiNews
 {
     [DbContext(typeof(LogsApiNewsContext))]
-    [Migration("20250616115730_Init")]
+    [Migration("20250628135448_Init")]
     partial class Init
     {
         /// <inheritdoc />
