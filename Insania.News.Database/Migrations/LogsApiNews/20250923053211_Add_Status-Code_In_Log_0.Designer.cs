@@ -3,6 +3,7 @@ using System;
 using Insania.News.Database.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Insania.News.Database.Migrations.LogsApiNews
 {
     [DbContext(typeof(LogsApiNewsContext))]
-    partial class LogsApiNewsContextModelSnapshot : ModelSnapshot
+    [Migration("20250923053211_Add_Status-Code_In_Log_0")]
+    partial class Add_StatusCode_In_Log_0
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
