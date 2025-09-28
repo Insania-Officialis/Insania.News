@@ -156,7 +156,7 @@ services
     });
 
 //Добавление параметров преобразования моделей
-services.AddAutoMapper(typeof(NewsMappingProfile));
+services.AddAutoMapper(cfg => { cfg.AddProfile<NewsMappingProfile>(); });
 
 //Регистрация списка исключений авторизации
 builder.Services.AddSingleton<List<string>>(
