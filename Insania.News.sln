@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insania.News.ApiRead", "Ins
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insania.News.Middleware", "Insania.News.Middleware\Insania.News.Middleware.csproj", "{117D1C70-FBAF-4E8B-852F-4C6501B23CB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Insania.News.Services", "Insania.News.Services\Insania.News.Services.csproj", "{BE16F413-07E3-42A9-8442-41F0EB45276F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{117D1C70-FBAF-4E8B-852F-4C6501B23CB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{117D1C70-FBAF-4E8B-852F-4C6501B23CB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{117D1C70-FBAF-4E8B-852F-4C6501B23CB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE16F413-07E3-42A9-8442-41F0EB45276F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE16F413-07E3-42A9-8442-41F0EB45276F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE16F413-07E3-42A9-8442-41F0EB45276F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE16F413-07E3-42A9-8442-41F0EB45276F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
