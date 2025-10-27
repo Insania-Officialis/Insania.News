@@ -28,7 +28,7 @@ public class NewsContext : DbContext
     }
     #endregion
 
-    #region Свойства
+    #region Поля
     /// <summary>
     /// Типы новостей
     /// </summary>
@@ -43,6 +43,11 @@ public class NewsContext : DbContext
     /// Детальные части новостей
     /// </summary>
     public virtual DbSet<NewsDetail> NewsDetails { get; set; }
+
+    /// <summary>
+    /// Параметры
+    /// </summary>
+    public virtual DbSet<ParameterNews> Parameters { get; set; }
     #endregion
 
     #region Методы
@@ -57,6 +62,9 @@ public class NewsContext : DbContext
 
         //Ограничение уникальности для псевдонима типа новости
         modelBuilder.Entity<NewsType>().HasAlternateKey(x => x.Alias);
+
+        //Ограничение уникальности для параметра
+        modelBuilder.Entity<ParameterNews>().HasAlternateKey(x => x.Alias);
     }
     #endregion
 }

@@ -19,5 +19,6 @@ public static class Extension
             .AddScoped<INewsTypesDAO, NewsTypesDAO>() //сервис работы с данными типов новостей
             .AddScoped<INewsDAO, NewsDAO>() //сервис работы с данными новостей
             .AddScoped<INewsDetailsDAO, NewsDetailsDAO>() //сервис работы с данными детальных частей новостей
+            .AddScoped<IParametersDAO, ParametersDAO>() //сервис работы с данными параметров
         ;
 }

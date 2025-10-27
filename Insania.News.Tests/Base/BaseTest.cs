@@ -40,6 +40,7 @@ public abstract class BaseTest
            {"InitializationDataSettings:Tables:NewsTypes", "true"},
            {"InitializationDataSettings:Tables:News", "true"},
            {"InitializationDataSettings:Tables:NewsDetails", "true"},
+           {"InitializationDataSettings:Tables:Parameters", "true"},
            {"TokenSettings:Issuer", "News.Test"},
            {"TokenSettings:Audience", "News.Test"},
            {"TokenSettings:Key", "This key is generated for tests in the news zone"},

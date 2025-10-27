@@ -48,6 +48,11 @@ public class InitializationDataSettingsIncludeTables
     /// Детальные части новостей
     /// </summary>
     public bool? NewsDetails { get; set; }
+
+    /// <summary>
+    /// Параметры
+    /// </summary>
+    public bool? Parameters { get; set; }
 }
 
 /// <summary>
