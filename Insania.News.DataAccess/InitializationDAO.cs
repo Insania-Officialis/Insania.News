@@ -35,6 +35,9 @@ namespace Insania.News.DataAccess;
 public class InitializationDAO(ILogger<InitializationDAO> logger, NewsContext newsContext, LogsApiNewsContext logsApiNewsContext, IOptions<InitializationDataSettings> settings, ITransliterationSL transliteration, IConfiguration configuration) : IInitializationDAO
 {
     #region Поля
+    /// <summary>
+    /// Пользователь, вносящий изменения
+    /// </summary>
     private readonly string _username = "initializer";
     #endregion
 
